@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Task Overview
+
+A URL shortener is a service that converts a provided long URL - [https://some.domain.com/some-path-to/somewhere](https://some.domain.com/some-path-to/somewhere) - into a shorter one like [https://w.xyz/abcdef](https://w.xyz/abcdef).
+
+
 
 * Ruby version
+    ruby '2.6.3'
+
+* Rails version
+    Rails '6.0.2'
 
 * System dependencies
+    > Make sure following applications are available on the system
+        - Ruby
+        - Rails
+        - Postgres
+        - Node.js
+        - Yarn
+        - Rvm - ruby version manager
 
-* Configuration
 
-* Database creation
+* How to run the application on local system
 
-* Database initialization
+    > git clone https://github.com/ANNJOSE0612/url_shortening_service.git
+    > bundle install
+    > rake db:create
+    > rake db:migrate
+    > rails s
+    > access the application on http://localhost:3000
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* features that need to be included
+    > Url validation
+    > calculation of no of clicks on the link created
+    > domain validation for custom domain
+    > set expiry for the shortned url
+    > displaying shortened url created by each user
